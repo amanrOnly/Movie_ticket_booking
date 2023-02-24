@@ -13,7 +13,7 @@ SECRET_KEY = "django-insecure-0e6c-$j_x4!k_s1oho9_96r-*nx755bz4#giy%dn2d4+8a_-u5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [".vercel.app", ".now.sh"]
+ALLOWED_HOSTS = [".vercel.app"]
 
 REST_FRAMEWORK = {"DEFAULT_SCHEMA_CLASS": "rest_framework.schemas.coreapi.AutoSchema"}
 
