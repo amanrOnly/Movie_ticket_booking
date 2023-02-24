@@ -1,4 +1,5 @@
 import traceback
+
 from django.conf import settings
 from django.core.mail import send_mail
 
@@ -8,7 +9,7 @@ def send_email(subject, message):
         subject=subject,
         message=message,
         from_email=settings.EMAIL_HOST_USER,
-        recipient_list=settings.EMAIL_RECIPIENTS,
+        recipient_list=["amanr.ic18@nsut.ac.in"],
         fail_silently=False,
     )
 
@@ -18,7 +19,7 @@ def send_email_on_error(func):
         try:
             return func(*args, **kwargs)
         except Exception as e:
-            
+
             send_email(
                 subject=f"Ticket Booking Error: {e}",
                 message=(
@@ -28,4 +29,5 @@ def send_email_on_error(func):
                 ),
             )
         raise
+
     return wrapper

@@ -11,9 +11,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-0e6c-$j_x4!k_s1oho9_96r-*nx755bz4#giy%dn2d4+8a_-u5"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [".vercel.app", ".now.sh"]
 
 REST_FRAMEWORK = {"DEFAULT_SCHEMA_CLASS": "rest_framework.schemas.coreapi.AutoSchema"}
 
@@ -126,3 +126,16 @@ SWAGGER_SETTINGS = {
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
+# Email Configuration
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_HOST_USER = "amanranapoiu@gmail.com"
+EMAIL_HOST_PASSWORD = "iagplybigayzfnzn"
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
