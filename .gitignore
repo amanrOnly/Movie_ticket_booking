@@ -10,12 +10,6 @@ logs/
 .env
 local_settings.py
 
-# Database
-db.sqlite3
-
-# Static files
-staticfiles/
-
 # Media files
 media/
 
