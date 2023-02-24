@@ -5,9 +5,9 @@ This is a project that provides APIs for a movie theater booking system. The API
 ## Additional Features
 - API Documentation at http://localhost:8000/docs/ or you can play around at http://localhost:8000/playground/
 - Sends Email to recepient whenever a error occurs.
-- Used pre-commit to meet coding standards
+- Used pre-commit for best coding standards.
 - Provided a elaborate ERD diagram to better understand the database.
-- Modified admin panel therefore you can manage data more intuitively.
+- Modified admin file therefore you can manage data more intuitively admin panel.
 
 ## Getting Started
 
@@ -19,6 +19,9 @@ To get started with the project, you can follow these steps for a LINUX-UBUNTU s
 4. Install the dependencies: `pip install -r requirements.txt`
 5. Run the migrations: `python manage.py migrate`
 6. Start the server: `python manage.py runserver`
+7. Access the admin panel at 'http://localhost:8000/admin'
+8. If default Username and Password both "qwe" doesn't work, in bash run 'python manage.py createsuperuser' and create your own Username and Password. 
+
 The application will be accessible at `http://localhost:8000/`
 
 The APIs follow a similar structure where an endpoint without a primary key supports GET and POST requests, while an endpoint with a primary key supports GET, PUT and DELETE requests.
