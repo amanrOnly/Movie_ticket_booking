@@ -1,0 +1,1 @@
+from movie_book_api.wsgi import application
