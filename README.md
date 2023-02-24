@@ -1,4 +1,4 @@
-# Movie_ticket_booking
+# Movie Ticket Booking API- Django REST framework (DRF)
 
 This is a project that provides APIs for a movie theater booking system. The APIs can be used to perform CRUD operations about movies, theaters, halls, showtimes, seats, and booking details. It also provides an endpoint to book tickets with friends. It keeps in mind the constraints to have alteast 6 seats per row and maintain unique instances.
 
