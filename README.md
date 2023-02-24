@@ -11,15 +11,15 @@ This is a project that provides APIs for a movie theater booking system. The API
 
 ## Getting Started
 
-To get started with the project, you can follow these steps:
+To get started with the project, you can follow these steps for a LINUX-UBUNTU system:
 
-1. Clone the repository: git clone https://github.com/your-username/your-repo.git
-2. Create a virtual environment: python3 -m venv env
-3. Activate the virtual environment: source env/bin/activate
-4. Install the dependencies: pip install -r requirements.txt
-5. Run the migrations: python manage.py migrate
-6. Start the server: python manage.py runserver
-The application will be accessible at http://localhost:8000/.
+1. Clone the repository: `git clone https://github.com/amanrOnly/Movie_ticket_booking.git`
+2. Create a virtual environment: `python3 -m venv env`
+3. Activate the virtual environment: `source env/bin/activate`
+4. Install the dependencies: `pip install -r requirements.txt`
+5. Run the migrations: `python manage.py migrate`
+6. Start the server: `python manage.py runserver`
+The application will be accessible at `http://localhost:8000/`
 
 The APIs follow a similar structure where an endpoint without a primary key supports GET and POST requests, while an endpoint with a primary key supports GET, PUT and DELETE requests.
 
