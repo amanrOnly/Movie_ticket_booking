@@ -23,8 +23,5 @@
             "src": "/(.*)",
             "dest": "movie_book_api/wsgi.py"
         }
-    ],
-    "scripts": {
-        "build": "django build --output public"
-      }
+    ]
 }
