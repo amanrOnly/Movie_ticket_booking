@@ -1,0 +1,30 @@
+# Compiled Python files
+*.pyc
+__pycache__/
+
+# Logs
+logs/
+*.log
+
+# Local settings
+.env
+local_settings.py
+
+# Database
+db.sqlite3
+
+# Static files
+staticfiles/
+
+# Media files
+media/
+
+# virtualenvs
+venv/
+env/
+
+# Other files
+.DS_Store
+.idea/
+*.pyc
+*.swp
